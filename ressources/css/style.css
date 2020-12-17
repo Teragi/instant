@@ -1,0 +1,481 @@
+/*INITIALISATION DE NOTRE PAGE*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:#fff;
+    color:#000000;
+    
+    font-weight:300px;
+    font-size:20px;
+    text-rendering: optimizeLegibility; /*Donne le rendu parfait des polices*/
+}
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*NOS COMPOSANTS REUTILISABLES : */
+.row{
+        max-width: 1980px;
+        margin: 0 auto;
+    }
+section{
+    padding: 80px 0;
+}
+/*HEADER*/
+.nav-bar1{
+    padding-top: 0;
+    padding-bottom: 49px;
+    margin: 0;
+    background-color:#29344b;
+}
+.nav-accueil{
+    padding: 0; margin: 0;
+    font-family:serif;
+    font-style: italic;
+    font-size: 35px;
+}
+.FormeA{
+    position: relative;
+    float: left;
+}
+.FormeB{
+    float: right;
+    position: relative;
+}
+.icon-Person{
+    transform: scale(1.2);
+    color: #fff;
+    font-size: 100%;
+    padding-right: 20px;
+}
+.title{
+    padding: 2px 0;
+    margin: 0px 0;
+    background-color: #fff;
+}
+h1{  
+        text-transform: capitalize;
+        font-family: serif;
+}
+.Titre{
+    font-size: 250%;
+    color: #29344b;
+    letter-spacing: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.menu{
+    padding: 0;
+    margin: 0;
+}
+.nav-bar2{
+    padding: 50px;
+    margin: 0;
+}
+.nav {
+    text-align: center;
+    font-family:serif;
+    font-style: italic;
+    font-size: 35px;
+}
+header{
+    height: 80vh;
+    background-size:cover;
+    background-position: center;
+    background-color: #fff;
+   
+}
+nav li {
+    display:inline;
+    padding: 0;
+    margin-top: 0;
+}
+nav a {
+    display:inline-block;
+    margin: 0px 10px;
+    color: #e7c296;
+}
+
+/*LINKS*/
+a:link,a:visited{
+    color: #e7c296;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,a:active{
+    color: #29344b;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border: 1px solid transparent;
+}
+/*BOUTONS*/
+.Accueil:link,
+.Accueil:visited,
+input[type=submit]{
+    display: inline;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: none;
+    font-weight: 100;
+}
+.Accueil:hover,
+.Accueil:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.Inscrip:link,
+.Inscrip:visited,
+input[type=submit]{
+    display: inline;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: none;
+    font-weight: 100;
+}
+.Inscrip:hover,
+.Inscrip:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.Connec:link,
+.Connec:visited,
+input[type=submit]{
+    display: inline;
+    text-decoration: none;
+    padding: 10px 30px;
+    border:none;
+    font-weight: 100;
+}
+.Connec:hover,
+.Connec:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.boutonalpha:link,
+.boutonalpha:visited,
+input[type=submit]{
+    display: inline-block;
+    text-decoration:none;
+    padding: 5px 50px;
+    font-weight: 10;
+    border-radius: 10px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    
+}
+.boutonalpha:hover,
+.boutonalpha:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.boutonbéta:link,
+.boutonbéta:visited,
+input[type=submit]{
+    display: inline-block;
+    text-decoration:none;
+    padding: 5px 50px;
+    font-weight: 100;
+    border-radius: 10px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.boutonbéta:hover,
+.boutonbéta:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.boutonoméga:link,
+.boutonoméga:visited,
+input[type=submit]{
+    display: inline-block;
+    text-decoration:none;
+    padding: 5px 50px;
+    font-weight: 200;
+    border-radius: 10px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.boutonoméga:hover,
+.boutonoméga:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.boutontétha:link,
+.boutontétha:visited,
+input[type=submit]{
+    display: inline-block;
+    text-decoration:none;
+    padding: 5px 50px;
+    font-weight: 200;
+    border-radius: 10px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.boutontétha:hover,
+.boutontétha:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    background-color: #e7c296;
+}
+.bouton-click:link,
+.bouton-click:visited,
+input[type=submit]{
+    background-color:#e7c296;
+    color: #29344b;
+    border: 3px solid #e7c296;
+}
+.bouton-no-click:link,
+.bouton-no-click:visited{
+    border: 3px solid #e7c296;
+    color: #29344b;
+}
+.bouton-click:hover,
+.bouton-click:active,
+input[type=submit]:hover
+input[type=submit]:active{
+    border: 3px solid #e7c296;
+    background:linear-gradient(#e7c29633, #e7c29633);
+    opacity: 90%;
+}
+.bouton-no-click:hover,
+.bouton-no-click:active{
+    border: 3px solid #29344b;
+    color: #29344b;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:  #29344b;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    background-color:  #29344b;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    letter-spacing: 1px;
+    text-align: center;
+    color:  #29344b;
+}
+h4{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.p-card{
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+    color: #29344b;
+}
+.p-contact{
+    letter-spacing: 3px;
+
+}
+.row{
+    max-width: 1980px;
+}
+section{
+    padding: 80px 0;
+    background-color:#fff;
+}
+img{
+    width: 250px;
+    height: 150px;
+
+}
+.img-fond{
+    margin: 40px 0 0 300px;
+    height: 300px;
+    width: 660px;
+    border-radius: 10px;
+}
+/*Section-1*/
+.card-1,.card-2,.card-3{
+    height: 400px;
+    width: 250px;
+    background-color:#e7c296;
+    display: inline-block;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.card-1:hover,.card-2:hover,.card-3:hover{
+    transform: scale(1.2);
+    box-shadow: 0 5px 5px  #29344b;
+}
+.card-1{
+    float: left;
+    margin-left: 20px;
+}
+.card-2{   
+  margin-left: 265px;
+}
+.card-3{
+    float:right;
+    margin-right: 20px;
+}
+
+/*Section-2*/
+.img-section-2{
+    height: 400px;
+    width: 250px;
+    text-align: left;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.img-section-2:hover{
+    transform: scale(1.1);
+}
+.sous-titre{
+    margin: 0 0 50px 0;
+}
+.p-section-2{
+    color:  #29344b;
+    font-size: 1.2em;
+    margin-left: 100px;
+    margin-top: -55px;
+}
+.titre-parfum{
+    margin: 50px 0 0 0;
+}
+table{
+    
+    width: 1000px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.liste-section-2{
+    text-align: center;
+    color:  #29344b;
+    font-size: 1.2em;
+}
+.liste-section-2:hover{
+    color: #e7c296;
+}
+.ion-ios-flower{
+    font-size: 250%;
+    margin-left: 45px;
+    color: #e7c296;
+}
+/*Section-3*/
+.p-section-3{
+    margin: 0 0 -50px 0;
+    padding: 0;
+}
+.p-section-3-1, .p-section-3-2,.p-section-3-3{
+    font-style: italic;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+    color:  #29344b;
+}
+.flowers-img {
+    list-style: none;
+    width: 100%;
+}
+.flowers-img li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.img-3{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+.img-3 img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transition:transform 0.5s;
+
+}
+.img-3 img:hover{
+    opacity: 1;
+	transform:scale(1.20);
+}
+/*Footer*/
+footer{
+    background-color: #fff;
+    color: #29344b
+}
+
+
+.p-service, .p-contact{
+    margin: 10px 0 0 0;
+    display: block;
+}
+.p-service{
+    padding:5px;
+    line-height: 115%;
+}
+
+.contact,.service,.social{
+    display: inline-block;
+    line-height: 12px;
+    vertical-align: middle;
+    width: 100%;
+    bottom:0px;
+    margin-top : 45px;
+    height: 150px;
+    width: 200px;  
+}
+.contact{
+    margin-left:20px ;
+    padding: 0 auto;
+}
+
+.service{   
+  margin-left: 370px;
+}
+.social{
+    float:right;
+    margin-right: 20px;
+    
+}
+.icon{
+    font-size: 250%;
+    margin: 10%;
+}
+.ion-social-facebook,.ion-social-instagram-outline {
+    transition: transform 0.2s color 0.2s;
+}
+.ion-social-instagram-outline:hover{
+    transform: scale(1.2);
+    color: #8134af;
+}
+.ion-social-facebook:hover{
+    transform: scale(1.2);
+    color: #3b5998;
+}
+.cont{
+    padding-bottom: 20px;
+    line-height: 105%;
+}
+.social-titre{
+    line-height: 105%;
+}
+.p-adresse{
+    line-height: 105%;
+}
